@@ -1,0 +1,116 @@
+[
+  {
+  	"id": 0,
+  	"day": "Sunday",
+  	"title": "Chest",
+  	"workouts": [
+	     {
+  			"title": "Flat Bench Press",
+  			"sets": "4",
+  			"reps": "10"
+  		},
+  		{
+  			"title": "Incline Bench Press",
+  			"sets": "4",
+  			"reps": "10"
+  		}
+	   ]
+   },
+  {
+   	"id": 1,
+   	"day": "Monday",
+   	"title": "Legs",
+   	"workouts": [
+ 	     {
+   			"title": "Squat",
+   			"sets": "4",
+   			"reps": "10"
+   		},
+   		{
+   			"title": "Seated Calve Raises",
+   			"sets": "4",
+   			"reps": "10"
+   		}
+ 	   ]
+  },
+  {
+    "id": 1,
+    "day": "Tuesday",
+    "title": "Shoulders",
+    "workouts": [
+  	   {
+  		  "title": "OHP",
+			  "sets": "4",
+  			"reps": "10"
+    	 },
+    	 {
+    		"title": "DB Side Raise",
+    			"sets": "4",
+    			"reps": "10"
+    		}
+  	   ]
+     },
+     {
+     	"id": 1,
+     	"day": "Wednesday",
+     	"title": "Back",
+     	"workouts": [
+   	     {
+     			"title": "Deadlift",
+     			"sets": "4",
+     			"reps": "10"
+     		},
+     		{
+     			"title": "Lat Pulldown",
+     			"sets": "4",
+     			"reps": "10"
+     		}
+   	   ]
+      },
+      {
+      	"id": 1,
+      	"day": "Thursday",
+      	"title": "Arms",
+      	"workouts": [
+    	     {
+      			"title": "Bicep Curl",
+      			"sets": "4",
+      			"reps": "10"
+      		},
+      		{
+      			"title": "Tricep Pushdown",
+      			"sets": "4",
+      			"reps": "10"
+      		}
+    	   ]
+       },
+       {
+       	"id": 1,
+       	"day": "Friday",
+       	"title": "Cardio",
+       	"workouts": [
+     	     {
+       			"title": "HIIT",
+       			"sets": "5",
+       			"reps": "30s"
+       		}
+     	   ]
+        },
+        {
+        	"id": 1,
+        	"day": "Saturday",
+        	"title": "rest",
+        	"workouts": [
+      	     {
+        			"title": "",
+        			"sets": "",
+        			"reps": ""
+        		},
+        		{
+        			"title": "",
+        			"sets": "",
+        			"reps": ""
+        		}
+      	   ]
+         }
+]

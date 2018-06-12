@@ -1,22 +1,38 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { ListView } from 'react-native';
+import { connect } from 'react-redux';
+import HomePageListItem from './HomePageListItem';
 
+class HomePage extends Component {
 
-export default class HomePage extends Component {
+  componentWillMount(){
+    const ds = new ListView.DataSource({
+      rowHasChanged: (r1,r2) => r1 !== r2
+    });
+    this.dataSource = ds.cloneWithRows(this.props.routines);
+  }
+
+  renderRow(routine){
+    return(
+      <HomePageListItem
+        routine={routine}
+      />
+    );
+  }
+
   render() {
     return(
-      <View style={styles.container}>
-        <Text>HomePage</Text>
-      </View>
+      <ListView
+        enableEmptySections
+        dataSource={this.dataSource}
+        renderRow={this.renderRow}
+      />
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
+const mapStateToProps = state => {
+  return { routines: state.routines };
+};
+
+export default connect(mapStateToProps)(HomePage);
